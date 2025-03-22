@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Html Demo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Advanced Html Features Demo</h1>
+    </header>
+
+    <section>
+      <h2>Ordered List with Roman Numerals</h2>
+      <ol type="I">
+        <li>Intro to HTML5</li>
+        <li>Working with Lists</li>
+        <li>Adding images</li>
+        <li>Creating Tables</li>
+        <li>Building Forms</li>
+        <li>Form Validation</li>
+        <li>Using Multimedia Elements</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>External image</h2>
+      <!-- image from pexels.com -->
+      <img
+        src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg"
+        alt="Code on screen"
+        width="600" />
+    </section>
+
+    <section>
+      <h1>Contact Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>123 Main St, Anytown</td>
+            <td>555-123-4567</td>
+            <td>john.doe@example.com</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>456 Oak Ave, Somewhere</td>
+            <td>555-765-4321</td>
+            <td>jane.smith@example.com</td>
+          </tr>
+          <tr>
+            <td>Michael Johnson</td>
+            <td>789 Pine Blvd, Nowhere</td>
+            <td>555-987-6543</td>
+            <td>michael.j@example.com</td>
+          </tr>
+          <tr>
+            <td>Sarah Williams</td>
+            <td>321 Elm St, Elsewhere</td>
+            <td>555-456-7890</td>
+            <td>sarah.w@example.com</td>
+          </tr>
+          <tr>
+            <td>David Brown</td>
+            <td>654 Maple Dr, Anywhere</td>
+            <td>555-789-0123</td>
+            <td>david.b@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form id="registration-form" action="#" method="post">
+        <!-- Name field with validation -->
+        <div>
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required />
+        </div>
+
+        <!-- Email field with validation -->
+        <div>
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required />
+        </div>
+
+        <!-- Password field with validation -->
+        <div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create a password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 characters"
+            required />
+        </div>
+
+        <!-- Date field -->
+        <div>
+          <label for="birthdate">Date of Birth:</label>
+          <input type="date" id="birthdate" name="birthdate" required />
+        </div>
+
+        <!-- Dropdown selection -->
+        <div>
+          <label for="country">Country:</label>
+          <select name="country" id="country" required>
+            <option value="">Select your country</option>
+            <option value="ke">Kenya</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="other">Others</option>
+          </select>
+        </div>
+
+        <!-- Radio buttons -->
+        <div>
+          <label for="">Gender:</label>
+          <div>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+
+        <!-- Checkboxes  -->
+        <div>
+          <label for="">interests (select all that apply):</label>
+          <div>
+            <input
+              type="checkbox"
+              id="coding"
+              name="interests"
+              value="coding" />
+            <label for="coding">Coding</label>
+
+            <input
+              type="checkbox"
+              id="design"
+              name="interests"
+              value="design" />
+            <label for="design">Web Design</label>
+
+            <input
+              type="checkbox"
+              id="database"
+              name="interests"
+              value="database" />
+            <label for="database">Database</label>
+
+            <input
+              type="checkbox"
+              id="networking"
+              name="interests"
+              value="networking" />
+            <label for="networking">Networking</label>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <section>
+        <h2>Multimedia Elements</h2>
+
+        <!-- Audio -->
+         <h3>Audio Sample</h3>
+         <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" controls>
+            your browser does not support the audio element
+         </audio>
+
+         <h3>Video Sample</h3>
+         <video width="500" height="300" src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" controls>
+            your browser does not support the video element
+         </video>
+    </section>
+
+    <footer>
+        <p>&copy 2024 Advanced HTML Demo by <a href="https://brianriant.vercel.app" target="_blank">Brian Riant</a></p>
+    </footer>
+  </body>
+</html>
